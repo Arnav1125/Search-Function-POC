@@ -37,11 +37,11 @@ Access the API at http://localhost:3000/
 
 ## API Endpoints
 # YouTube Search
-GET /youtube-search?q=search_term
+GET  http://localhost:3000/youtube-search?q=search_term 
 Returns a list of YouTube videos related to the search_term.
 # Academic Search
-GET /academic-search?q=search_term
+GET http://localhost:3000/academic-search?q=search_term
 Returns a list of academic papers related to the search_term.
 # Article Search
-GET /article-search?q=search_term
+GET http://localhost:3000/article-search?q=search_term
 Returns a list of articles related to the search_term
