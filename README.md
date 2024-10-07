@@ -45,3 +45,26 @@ Returns a list of academic papers related to the search_term.
 # Article Search
 GET http://localhost:3000/article-search?q=search_term
 Returns a list of articles related to the search_term
+
+## Documentation
+This section outlines the approach taken in the project, the technologies used, and any challenges faced during development.
+# Approach
+The project aims to provide a unified search function that fetches results from various content sources, including YouTube, academic articles, and news articles. The backend is built using Node.js and Express, allowing for easy integration of multiple APIs.
+
+# Technologies Used
+Node.js
+Express
+dotenv
+node-fetch
+YouTube Data API
+Google Custom Search API
+
+# Challenges Faced
+1. API Rate Limits: Encountered restrictions on the number of requests to the YouTube Data API. Implemented caching strategies to minimize repeated requests for the same queries.
+2.Data Integration: Ensured that data from different sources was returned in a consistent format. Created a unified response structure to present search results neatly.
+# Ranking and Integration of Content Sources
+1.The results from each API are fetched independently and then combined in the backend.
+2.A simple ranking mechanism was implemented based on the relevance of the search term, such as prioritizing YouTube results first, followed by academic articles and then news articles.
+3.This ranking is based on the number of occurrences of the search term in the title and description.
+
+
